@@ -1,0 +1,270 @@
+body {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+#hero {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.872), rgba(75, 175, 233, 0.562)),
+    url('../Images/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover !important;
+}
+
+#projects {
+  background-color: #f8f9fa;
+}
+
+@media(min-width:320px) and (max-width: 431px) {
+  .skillContainer {
+    box-shadow: -1px 0 10px 0 rgba(0, 0, 0, .07), 5px 20px 40px 0 rgba(0, 0, 0, .04);
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    border-radius: 50%;
+    margin: 20px !important;
+    width: 150px !important;
+    height: 150px !important;
+  }
+
+  .skillIcon {
+    width: 40% !important;
+  }
+
+  .skillText {
+    font-size: medium;
+  }
+
+  .card {
+    width: 75% !important;
+    margin: 10px;
+    margin-bottom: 0.1em !important;
+  }
+
+
+}
+
+@media (min-width:320px) and (max-width: 991px) {
+  .socials {
+    justify-content: center;
+  }
+
+  .skillText {
+    visibility: visible !important;
+    opacity: 1 !important;
+
+  }
+
+  .skillIcon {
+    transform: translate(0, -2px) !important;
+  }
+
+  .skillContainer {
+    margin: 8px !important;
+  }
+
+  .card {
+    width: 20em !important;
+    margin: 10px;
+    margin-bottom: 0.1em !important;
+  }
+}
+
+
+.navbar {
+  padding: 0.7em;
+}
+
+
+.navbar-toggler {
+  color: transparent !important;
+  border-color: transparent;
+
+}
+
+.navbar-collapse {
+  transition: all 0.7s;
+}
+
+.nav-link:hover {
+  color: #0c80fb !important;
+  transition: 0.6s;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 450;
+}
+
+.fa-brands {
+  padding: 0.1em;
+}
+
+.fa-brands:hover {
+  color: #000 !important;
+  transition: 0.8s;
+}
+
+.container {
+  width: auto;
+  display: inline-block;
+  padding: 0;
+}
+
+#heroDesc {
+  font-size: small;
+}
+
+.btn {
+  transition: 0.6s !important;
+}
+
+.btn:hover {
+  transform: translate(0, -2px);
+}
+
+.btn-outline-primary {
+  background-color: #ffffff;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+
+}
+
+.skillContainer {
+  box-shadow: -1px 0 10px 0 rgba(0, 0, 0, .07), 5px 20px 40px 0 rgba(0, 0, 0, .04);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+.skillText {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s linear, opacity 0.3s linear;
+}
+
+.skillContainer:hover .skillText {
+  transition: 0.8s;
+  visibility: visible;
+  opacity: 1;
+}
+
+.skillContainer:hover .skillIcon {
+  transition: all 0.3s ease-in-out;
+  transform: translate(0, -2px);
+}
+
+.skillIcon {
+  padding-bottom: 3px;
+  height: 40%;
+  width: 60%;
+  transition: all 0.3s ease-in-out;
+  transform: translate(0, +15px);
+}
+
+.card {
+  width: 27em;
+  margin: 5px;
+  margin-bottom: 2em !important;
+  border-radius: 10px 10px !important;
+  box-shadow: -1px 0 10px 0 rgba(0, 0, 0, .07), 5px 20px 40px 0 rgba(0, 0, 0, .04) !important;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  font-size: medium;
+  font-weight: 700;
+}
+
+.card-text {
+  font-size: small;
+}
+
+.tagline {
+  text-align: center;
+  font-size: small;
+  margin-bottom: 3em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.contactContainer {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.contactHeader {
+  font-size: large;
+  font-weight: 700;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.contactTagline {
+  text-align: center;
+  font-size: small;
+  margin-bottom: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.contactInfo:link,
+.contactInfo:visited,
+.contactInfo:hover,
+.contactInfo:active {
+  text-decoration: none;
+  color: #0c80fb;
+  font-weight: 400;
+  outline: none;
+}
+
+#typedEffect {
+  font-size: larger;
+  border-color: black;
+  color: #0c80fb;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+  animation: typing 2.5s steps(30, end) forwards, blinking 1s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+@keyframes blinking {
+  0% {
+    border-right-color: transparent
+  }
+
+  50% {
+    border-right-color: black
+  }
+
+  100% {
+    border-right-color: transparent
+  }
+}
